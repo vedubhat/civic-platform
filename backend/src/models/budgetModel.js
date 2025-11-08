@@ -105,4 +105,4 @@ budgetSchema.pre("save", function (next) {
   next();
 });
 
-export default mongoose.model("Budget", budgetSchema);
+export default budgetSchema;

@@ -1,4 +1,4 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
 
 const wardRepSchema = new mongoose.Schema({
   wardLeaderId: { type: String, required: true, unique: true },
@@ -24,4 +24,4 @@ const wardRepSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now }
 });
 
-module.exports = mongoose.model("WardRepresentative", wardRepSchema);
+export default wardRepSchema;

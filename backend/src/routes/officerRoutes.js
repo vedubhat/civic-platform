@@ -1,8 +1,8 @@
 import express from "express";
 import { createOfficer } from "../controllers/officerController.js";
 
-const router = express.Router();
+const officerRoutes = express.Router();
 
-router.post("/create", createOfficer);
+officerRoutes.post("/create", createOfficer);
 
-export default router;
+export default officerRoutes;
