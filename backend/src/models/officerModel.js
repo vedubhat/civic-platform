@@ -1,12 +1,9 @@
 import mongoose from "mongoose";
 
 const officerSchema = new mongoose.Schema({
-  uuserId: { 
-    type: mongoose.Schema.Types.ObjectId, 
-    ref: "User",
-    required: true, 
-    unique: true    
-  },
+  name : String,
+  email : String,
+  password : String,
   wardsManaged: [{ 
     type: mongoose.Schema.Types.ObjectId, 
     ref: "Ward" 
